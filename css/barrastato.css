@@ -1,0 +1,28 @@
+body {
+  padding:0;
+  margin:3px 0 0 5px;
+  font-size: 12px;
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+}
+h1 {font-size: 14px; text-align: left; border-bottom: 1px solid #EEE; padding-bottom: 4px; font-variant: small-caps; padding-left: 7px;}
+div { margin-bottom: 1px; padding: 1px 0 1px 0;}
+.attiva {
+  padding-left: 2px;
+  background-color: #dddddd;
+  color: #444444;
+}
+a:hover .attiva , a:focus .attiva {
+  background-color: #bbbbbb;
+  color: #111111;
+}
+.disattiva {
+  padding-left: 2px;
+  border-left: 4px solid #C2CCCF;
+  color: #C2CCCF;
+}
+a, a:visited { text-decoration:none; }
+
+.menu {
+font-size: 14px; text-align: left; border-bottom: 1px solid #EEE; padding-bottom: 4px; font-variant: small-caps; padding-left: 7px;
+text-align: center;	
+}

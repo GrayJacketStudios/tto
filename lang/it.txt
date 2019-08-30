@@ -1,0 +1,245 @@
+<?php
+
+define("_MODIFICAEVENTO_","Editar evento");
+define("_INSERISCIEVENTO_","Insertar evento");
+define("_SUPPLENZAEVENTO_","Planea cambio profesor");
+define("_DATAEVENTO_","Fecha evento");
+define("_ORAINIZIO_","Hora inicio");
+define("_ORAFINE_","Hora termino");
+define("_TIPOEVENTO_","Tipo evento");
+define("_CLASSE_","Clase");
+define("_NOTES_","Notas");
+define("_DURATA_","Duración");
+define("_OPZCANCNONOTIFY_","CANCELA CON AVISO");
+define("_OPZCANCNORECUPERO_","CANCELA SIN AVISO (<24 ore)");
+define("_OPZCANCSIRECUPERO_","CANCELA Y PLANEA CLASE DE RECUPERO");
+define("_OPZCANCSINOTIFY_","CANCELA Y NOTIFICA");
+define("_LBLDATAPREVRECUPERO_","Fecha prevista por clase de recupero");
+define("_BTNCONFSUPPLENZA_","Confirmar cambio profesor");
+define("_BTNSALVA_","Guarda");
+define("_BTNCANCELLA_","Borrar este evento");
+define("_LBLSUBSTREQUEST_","SOBSTITUCION EN ESPERA DE CONFIRMACION");
+define("_BTNCHIUDI_","Serrar ventana");
+define("_BTNSUPPLENZA_","Cambio Profesor");
+define("_MSGSEISICURO_","Estas seguro?");
+define("_LBLSENSE_","SENSE:&nbsp;");
+define("_LBLOTEC_","OTEC:&nbsp;");
+define("_LBLNODATA_","Ninguna fecha insertada");
+define("_LBLLCI_","Libro controle de clase");
+define("_DOMENICA_","Domingo");
+define("_LUNEDI_","Lunes");
+define("_MARTEDI_","Martes");
+define("_MERCOLEDI_","Miercoles");
+define("_GIOVEDI_","Jueves");
+define("_VENERDI_","Viernes");
+define("_SABATO_","Sabado");
+define("_GENNAIO_","Genaro");
+define("_FEBBRAIO_","Febrero");
+define("_MARZO_","Marzo");
+define("_APRILE_","Abril");
+define("_MAGGIO_","Mayo");
+define("_GIUGNO_","Junio");
+define("_LUGLIO_","Julio");
+define("_AGOSTO_","Agusto");
+define("_SETTEMBRE_","Septiembre");
+define("_OTTOBRE_","Octubre");
+define("_NOVEMBRE_","Noviembre");
+define("_DICEMBRE_","Diciembre");
+define("_LBLNODOCENTEASS_","Ningun profesor asosiado");
+define("_BRNCALENDARIO_","Cal");
+define("_BTNCONFEVTESALVA_","CONFIRMAR FECHAS Y CARGA EVENTOS");
+define("_NOISCRITTI_","No inscritos");
+define("_BTNISCRITTI_","Inscritos");
+define("_BACKTOINS_"," Vuelvas a insertar");
+define("_CODLIVCORSO_","Nivel Curso"); //tipologia-livello del crso
+define("_LBLCOLORE_","Color");
+define("_LBLDOCENTI_","Profesores");
+define("_BTNRESET_","Ripristinar los valores antecedentes");
+define("_MSGDELSTUDCLASSE_","Concludere l'iscrizione dello studente alla classe?Premendo OK lo studente non sara' piu' iscritto alla classe dalla data ordierna; premendo Annulla verra' cancellata completamente l'iscrizione dello studente alla classe (correzione di errore)");
+define("_MSGDATADELSTUDCLASSE_","Insertar fecha de termino dd/mm/yyyy es. 20/06/2010");
+define("_TITREPORT_","Report");
+define("_REPORT1TIT_","Stats trabajo profesor");
+define("_PERIODO_","Periodo");
+define("_BTNELABORA_","Elabora");
+define("_EMAIL_","Correo");
+define("_LBLGRANTBOSS_","Autorizavion nivel Boss");
+define("_LBLGRANTVICEBOSS_","Autorizavion nivel VICEBOSS");
+define("_LBLGRANTUSER_","Autorizavion nivel Usuario Normal");
+define("_NOASSOCIAZIONE_","Ninguna autorizacion");
+define("_TXTDISABILITA_","Deactivar");
+define("_TXTABILITA_","Activar");
+define("_LBLUSERNAME_","Usuario");
+define("_LBLPASSWORD_","Clave");
+define("_LBLNOME_","Nombre");
+define("_LBLEMAIL_","Correo");
+define("_OPZUTENTENORMALE_","Usuario normal");
+define("_OPZVICEBOSS_","ViceAdmin");
+define("_OPZBOSS_","Boss");
+define("_MSGDBQUERYKOSAVE_","No he sido posible grabar sus datos. Ententar de nuevo mas tarde.");
+define("_MSGDBQUERYOKSAVE_","Modificaciones guardadas corectamente");
+define("_TITDBQUERY_","Guardando los datos");
+define("_BTNDBQUERYBACK_","Atras");
+define("_BTNDBQUERYGO_","Sigue");
+define("_LBLAZIONE_","Accion");
+define("_LBLINIZIO_","Inicio:");
+define("_LBLFINE_","Fin:");
+define("_TITINCONFLITTOCON_","en conflicto con");
+define("_BTNELABCONFL_","Elabora y Verifica");
+define("_MSGBACKWEEK_","Septimana antecedente");
+define("_MSGNEXTWEEK_","Septimana sucesiva");
+define("_MSGREFRESH_","Actualizar");
+define("_TITALERTBOX_","AlertBox");
+define("_MSGMBOXNOMSG_","No mensajes");
+define("_LBLCONFSOST_","<BR>Cambio de profesor confirmado"); //msg stampato sotto l'evento da confermare
+define("_LBLSOSTNOCONF_","<BR>Cambio de profesor no confirmado"); //msg stampato sotto l'evento da confermare
+define("_LBLSOSTREQ_","<BR>Solicitud de cambio"); //msg stampato sotto l'evento da confermare
+define("_LBLSOSTCONF_","<BR>Cambio confirmado"); //msg stampato sotto l'evento da confermare
+define("_MSGMBOXUPDATE_","Mensajeria Actualizada");
+define("_TITMBOXEDIT_","Editar Mensajeria");
+define("_BTNMBOXUPDATE_","ACTUALIZAR");
+define("_BTNMBOXCHIUDI_","SERRA");
+define("_OK_","OK");
+define("_ALERT_","ALERT");
+define("_ABOXTITSOSTREQ_","SOLICITUD SOBSTITUCION");
+define("_ABOXMSGSOSTREQ_","No fue planeada ninguan sobstitucion per este evento");
+define("_CORSO_","Curso");
+define("_BTNPLANSOST_","planea sostitucion"); //pulsante
+define("_ABOXTITCONFSOST_","CONFIRMA SOBSTITUCION");
+define("_ABOXMSGCONFSOST_","Confirmar disponibilidad y hacer la siguiente sobstitucion");
+define("_LBLDOCSOSTITUIRE_","Profesor que sobstituir");
+define("_ABOXMSGCLICKCONFIRM_","Click para confirmar");
+
+define("_LBLMBARUSER_","Usuario:"); //BARRA MENU
+define("_LBLMBARLOGOUT_","Salir"); //BARRA MENU
+define("_LBLMBARTIMETAB_","TimeTable"); //BARRA MENU
+define("_LBLMBARCLIENTI_","Clientes"); //BARRA MENU
+define("_LBLMBARSTUDENTI_","Alumnos"); //BARRA MENU
+define("_LBLMBARCLASSI_","Clases"); //BARRA MENU
+define("_LBLMBARDOCENTI_","Profesores"); //BARRA MENU
+define("_LBLMBARREPORT_","Contabildad"); //BARRA MENU
+define("_LBLMBARUSERS_","Usuarios"); //BARRA MENU
+
+define("_LBLMBARLINGUA_","Lenguaje"); //BARRA MENU
+
+
+
+define("_LBLTEL_","Tel:");
+define("_LBLMOBILE_","Movil:");
+define("_LBLFAX_","Fax:");
+define("_LBLRUT_","Rut");
+define("_LBLGIRO_","Giro");
+define("_LBLNUM_","Num");
+define("_LBLCOMUNE_","Comuna");
+define("_LBLEMAIL1_","Correo Primario");
+define("_LBLEMAIL2_","Correo Primario");
+define("_LBLAZIENDA_","Cliente / Empreza");
+define("_MSGNOUSER_","Ningun Usuario"); //option nella finestra di selezione degli utenti
+define("_BTNRICERCA_","Filtrar");
+define("_TITCLIENTE_","Cliente");
+
+
+//----------------------------------------------------------------------------------
+
+define("_LBLVATNO_","P.IVA");
+define("_LBLCONTABILI_","Dati contabili");
+define("_TITDOCENTI_","Profesores");//titolo della form
+define("_LBLNICK_","Nickname");
+define("_LBLNOUSERASS_","Nombre Usuario asosiado");
+define("_MSGUSERATTIVO_","Activo");
+define("_MSGUSERNONATTIVO_","No Activo");
+define("_MODDOCENTE_","Editar Profesor");
+define("_INSDOCENTE_","Insertar Profesor");
+
+//----------------------------------------------------------------------------------
+
+define("_CLIENTE_","Cliente");
+define("_INDIRIZZO_","DIreccion");
+define("_CONTATTI_","Contactos");
+define("_RIFERIMENTI_","Riferimenti");
+define("_EMAIL_","Correo");
+define("_ALTREINFO_","Otras informciones");
+define("_MODCLIENTE_","Editar Cliente");
+define("_INSCLIENTE_","Insertar Cliente");
+
+
+
+define("_STUDENTE_","Estudiante");
+define("_APPARTAMENTO_","Departamento");
+define("_STATOATTIVO_","Status"); //toplabel per palla verde/rossa
+define("_INSSTUDENTE_","Insertar Estudiante");
+define("_MODSTUDENTE_","Editar Estudiante");
+
+
+
+define("_CLASSIINSEGNAMENTO_","Cursos de aprendisaje");
+define("_DESCRIZIONE_","Descrpcion");
+define("_LIVELLOCORSO_","Nivel");
+define("_CODICI_","Codigos");
+define("_PLANNING_","Planeado");
+define("_LUOGO_","Lugar");
+define("_DATAINIZIO_","Fecha Inicio:");
+define("_DATAFINE_","Fecha Termino:");
+define("_DURATATOTALE_","Horas Totales:");
+define("_OREPIANIFICATE_","Horas Planeadas");
+define("_DURATALEZIONE_","Duracion Clase");
+define("_COMPENSO_","Pago al Profesor");
+define("_ATTIVITA_","Actividad");
+define("_INSCLASSEINSEGNAMENTO_","Insertar nueva clase");
+define("_MODCLASSEINSEGNAMENTO_","Editar clase selectionada");
+
+
+
+
+
+define("_LBLPREFDAY_","Editar la planeacion semanal");
+define("_LBLMATITA_","Editar este linea");
+define("_LBLCANCELLA_","Eliminar este linea");
+define("_TITOLOPREFDAY_","Plasear curso");
+define("_DATECALCOLATE_","Fechas calculadas"); //tabella prefday che mostra le date elaborate dal sistema
+define("_LEZIONENN_","Clase numero");
+
+
+define("_NOCHANGE_","NO CAMBIOS");
+define("_NOINS_","NO INSERTAR");
+define("_SOST_","SOBSTITUCION");
+define("_DELSAMED_","ELIMINAR SIN AVISO");
+define("_DELNOTIF_","ELIMINAR CON AVISO");
+
+define("_TITCONFLITTO_","ALISIS DE CONFLICTOS");
+
+
+define("_USERNAME_","Administracion Ususarios");
+
+
+define("_LBLPERMESSI_","Permisos");
+define("_LBLDATACREAZIONE_","Fecha creacion");
+define("_LBLASSOCIATO_","Perfil asociado");
+define("_LBLSTATO_","Status");
+define("_DOCENTE_","Profesor");
+define("_TITSTUDENTE_","Alumno");
+define("_MODUSER_","Editar usuario");
+define("_INSUSER_","Insertar nuevo usuario");
+
+define("_SOSTCONF_","Sobstitucion confirmada");
+define("_EVTSOSTITUITO_","Evento sobstitutuvo confirmado");
+define("_SOSTDAPROG_","Sobstitucion en espera de confirmacion");
+define("_SOSTPROGDACONF_","En espera de confirmacion");
+define("_SOSTDACONF_","Sobstitucion en espera de confirmacion");
+
+
+
+
+
+$vetconvlang=array();
+
+//TIPOEVENTO
+$vetconvlang['_LEZIONE_']="Clase";
+$vetconvlang['_TESTDIAGNOSTICO_']="Test diagnostico";
+$vetconvlang['_MEETINGPROF_']="Reunion profesores";
+$vetconvlang['_COLLOQUIOPROF_']="Intrevista Profesore";
+$vetconvlang['_INITIALMEETING_']="Initial meeting";
+$vetconvlang['_OFFICEWORK_']="Oficina";
+$vetconvlang['_NOTAVAILABLE_']="No Disponible";
+
+
+?>

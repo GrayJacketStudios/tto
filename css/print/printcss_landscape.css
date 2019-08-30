@@ -1,0 +1,6 @@
+  /** Change the paper size, orientation, and margins */
+  @page {
+    size: 8.5in 14in;
+    orientation: landscape;
+  }
+  body {font-size: 14px;}

@@ -1,0 +1,53 @@
+body {
+  font-size: 100%
+  color: black;
+  background-color: white;
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+.loginform {
+  background-color: #cccccc;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #333;
+  -moz-border-radius: 5px;
+}
+.loginform .header {
+  padding: 0;
+  margin: 0;
+  color: #cccccc;
+  background-color: #000000;
+  background-position: 2px;
+
+  background-repeat: no-repeat;
+  height: 37px;
+  font-variant: small-caps;
+}
+.loginform .header .header-text {
+  margin-left: 54px;
+  font-size: 14px;
+}
+.loginform .footer {
+  background-color: #bbbbbb;
+  font-weight: normal;
+  font-size: 9px;
+  text-align: right;
+  color: #8BA4DF;
+}
+
+input {  padding: 2px; }
+.tb {
+  border: 1px solid black;
+  padding: 2px;
+  background-color: white;
+}
+.tb:hover {
+  background-color: #bbbbbb;
+}

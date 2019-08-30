@@ -1,0 +1,423 @@
+body {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; margin: 0; padding: 0;}
+
+#pup {position:absolute; visibility:hidden; z-index:200; width:130; }
+
+#dhtmltooltip {
+  position: absolute;
+  width: 150px;
+  border: 2px solid black;
+  padding: 2px;
+  background-color: lightyellow;
+  visibility: hidden;
+  z-index: 100;
+  /*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+
+h1 {
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+  padding: 0 0 4px 0;
+  font-variant: small-caps;
+  margin: 0 0 20px 7px;
+  width: 90%;
+}
+h1 .little {
+  font-weight: normal;
+  font-size: 50%;
+  margin-right: 7px;
+}
+a, a:visited {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  /*padding: 10px;*/
+  padding-bottom: 2px;
+  /*border-bottom: 1px dashed #FFF;*/
+}
+a:hover {
+  /*border-bottom: 1px solid #FFF;*/
+}
+/*******************************/
+    .inputform {
+      background-color: #8BA4DF;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      border: 1px solid #333;
+      -moz-border-radius: 5px;
+}
+    .searchform {
+      background-color: #9ADF8C;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      border: 1px solid #333;
+      -moz-border-radius: 5px;
+}
+
+    .form_lbl {
+      text-align:right;
+      padding-right: 10px;
+      width:120px;
+    /*
+      padding: 0;
+      margin: 0;
+      background-color: #4F659F;
+      background-image: url(../img/edit_user.gif);
+      background-position: 2px;
+      background-repeat: no-repeat;
+      height: 37px;
+      font-variant: small-caps;
+      border-bottom: 1px solid #000000;
+    */
+    }
+    .form_help {
+      cursor: help;
+    }
+/* stile intestazione tabelle */
+    .headerins {
+      padding: 0;
+      margin: 0;
+      background-color: #4F659F;
+      background-image: url(../img/edit_add.png); /*mod*/
+      background-position: 2px;
+      background-repeat: no-repeat;
+      height: 37px;
+      font-variant: small-caps;
+      border-bottom: 1px solid #000000;
+    }
+    .headermod {
+      padding: 0;
+      margin: 0;
+      background-color: #4F659F;
+      background-image: url(../img/edit.gif); /*mod*/
+      background-position: 2px;
+      background-repeat: no-repeat;
+      height: 37px;
+      font-variant: small-caps;
+      border-bottom: 1px solid #000000;
+    }
+    .headershow {
+      padding: 0;
+      margin: 0;
+      background-color: #4F659F;
+      background-image: url(../img/show.png); /*mod*/
+      background-position: 2px;
+      background-repeat: no-repeat;
+      height: 37px;
+      font-variant: small-caps;
+      border-bottom: 1px solid #000000;
+    }
+    .inputform .headerins .header-text,
+    .inputform .headermod .header-text {
+      margin-left: 54px;
+      font-size: 14px;
+    }
+    .backinsert a, .backinser a:visited{
+      font-size: 12px;
+      font-weight: normal;
+      text-decoration: none;
+      margin-right: 2px;
+      border: 1px outset #6495ED;
+      padding: 1px;
+      background-color: #6495ED;
+      color: #FFF;
+    }
+    .backinsert a:hover {
+      border: 1px inset #6495ED;
+    }
+
+/* stile elementi form */
+input, select, textarea {
+  background-color: #FFF;
+  border: 1px solid #444;
+  padding: 2px;
+  font-size: 12px;
+}
+input:hover,
+input:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus{
+  background-color: #AEB5CA;
+}
+
+
+
+.form_txt {
+  font: small Verdana, Geneva, Arial, Helvetica, sans-serif;
+  border-color: Aqua Aqua Blue Aqua;
+  border-style: none none solid none;
+  border-width: 0 0 1 0;
+}
+
+.form_submit {
+  height: 25px;
+  width: 150px;
+  color:Blue;
+  font-size: small;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.form_reset {
+  height: 25px;
+  color:#FF4500;
+  font-size: small;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.lista_col {
+	/*color: white;*/
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	font-weight: bold; /*background-color: #FFF8DC;*/
+	color: Blue;
+	background-color: #CCCCCC;
+}
+
+.lista_col_form2{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	font-weight: bold; /*background-color: #FFF8DC;*/
+	color: Blue;
+	vertical-align: middle;
+}
+
+.risalto {
+  font-size:12px !important;
+  font-variant:small-caps !important;
+}
+
+.lista_col_pari {
+	/*color: white;*/
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	font-weight: bold; /*background-color: #FFF8DC;*/
+	color: Blue;
+	background-color: #ECF8F9;
+}
+
+.lista_col_dispari {
+	/*color: white;*/
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	font-weight: bold; /*background-color: #FFF8DC;*/
+	color: Blue;
+	background-color: White;
+}
+
+.lista_col_sez2 {
+	/*color: white;*/
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	font-weight: bold; /*background-color: #FFF8DC;*/
+	color: Blue;
+	background-color: #FFDEAD;
+}
+.lista_col_lastobj {
+	/*color: white;*/
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	font-weight: bold; /*background-color: #FFF8DC;*/
+	color: Blue;
+	background-color: #FFA500;
+}
+.lista_table {
+    width:95%;
+}
+.lista_lbl {
+	font-size:13px;
+	font-variant:small-caps;
+}
+.lista_tittab {
+	font: bolder small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #FEFCD3;
+	color: #FF2424;
+	text-align: center;
+}
+
+.form_tit {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  color:red;
+}
+
+.titolo_guida {
+  font: bolder medium Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color:Red;
+  font-size: 16px;
+}
+
+.testo_guida {
+  font: bolder medium Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color:black;
+  font-size: 12px;
+
+
+}
+
+.paragrafo_guida {
+  font: bolder medium Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color:blue;
+  font-size: 14px;
+
+}
+
+.testo_piccolo {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size:12px;
+
+}
+
+.albero_cmd {
+  width: 100px;
+
+}
+
+.albero_settore {
+  b ackground-color: #BBFEFF;
+
+}
+.albero_servizio {
+  b ackground-color: #8AFEFF;
+}
+.albero_ufficio {
+  b ackground-color: #51FDFF;
+}
+.albero_titolo {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-variant: small-caps;
+  text-align: center;
+  color:#0002CA;
+}
+
+.titolo_ente {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: italic;
+  color: #0002CA;
+}
+
+.alertbox {
+  width:22%;
+  background-color:#FF2E1F;
+}
+.msgbox {
+  width:22%;
+  background-color:#7A70FF;
+}
+.td_free td:hover {
+	background-color: #FFDEAD;
+}
+.td_free {
+	background-color: #DBDBDB;
+}
+.td_days {
+	background-color: #DBDBDB;
+	font-size:13px;
+	font-weight:bolder;
+}
+.td_hours {
+	background-color: #DBDBDB;
+	width:13%;
+	font-size:11px;
+	font-weight:bolder;
+}
+
+.td_cmd {
+	vertical-align: top;
+	background-color: #E8E8FB;
+}
+
+.td_lbl {
+  font-family:Verdana,Arial;
+  font-size:10px;
+  font-weight:bolder;
+  width:100px;
+}
+
+
+.form_input {
+  width:140px;
+}
+
+.cust_nome {
+  font-size:24px;
+  font-weight:bolder;
+}
+.cust_lbl {
+  font-size:10px;
+  font-weight:bolder;
+  color:#0000ff;
+}
+
+.manina {
+    cursor:pointer;
+}
+
+.option_selected {
+     background-color:#FFAA00;
+     font-style:italic;
+     font-weight:bolder;
+   }
+
+.txt_evidente {
+  color:#0300FF;
+  font-weight:bolder;
+  font-style:italic;
+}
+
+.form2_lista_riga_dispari{
+  background-color:#EDEDED !important;
+}
+
+.form2_lista_riga_pari{
+  background-color:#F7F7F7 !important;
+}
+.form2_lista_riga_select {
+  background-color:#FFAA00 !important;
+}
+.header-msg {
+  font-size:10px;
+}
+.col_dati {
+  text-align:center;
+  font-size:14px;
+}
+.form2_lista_riga_evidente1 {
+  background-color:#FFB87F !important;
+}
+
+.form2_lista_riga_evidente_selid {
+  background-color:#C7FFD5 !important;
+}
+
+
+.support_table{
+   width:80%;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+.boxaggiornamento {
+    	background-color: #4355E0;
+    	-moz-border-radius: 10px;
+    	border-radius: 10px;
+    	text-align: center;
+    	font-size: 12px;
+    	font-weight: bolder;
+    	color: #FFFFFF;
+    	vertical-align: middle;
+    	height: 40px;
+    	width: 60%;
+    }

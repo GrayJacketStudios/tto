@@ -1,0 +1,46 @@
+/* STILE NEL TITOLO - FRAME ALTO */
+body {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; margin: 0; padding: 0;}
+h1 {
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: #000;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+h1 .little {
+  font-weight: normal;
+  font-size: 50%;
+  margin-right: 7px;
+}
+a, a:visited {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  padding: 0px;
+  /*border: 1px solid #FFF;*/
+}
+
+td {border: 0px solid #EEE; font-weight: bold;font-size: 9px;text-align: center;border: 1px solid #ddd;}
+
+table {margin: 0; padding:0;}
+td:hover {
+  border: 1px solid #666;
+  background-color: #CCC;
+}
+.intestazione {
+  /*border-bottom: 1px solid #DDD;*/
+}
+.sottointestazione {
+  background-image: url(../img/topframebg.gif);
+  background-repeat: repeat-x;
+  height: 2px;
+}
+.pacchetto_sw {
+ font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+ font-size: 10px;
+ font-weight:bolder;
+ color:#000000;
+}

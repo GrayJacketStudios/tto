@@ -1,0 +1,90 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-15">
+  <link rel="stylesheet" type="text/css" href="reminder_data/titoloframe.css">
+</head>
+<body style="margin: 0pt;" bgcolor="#dddddd">
+<script>
+</script>
+<center><img src="reminder_data/sveglia_22.png" style="margin-top: 15px;" onclick="apriins();" alt="_LBLLASTUPDATE_ 29/4/2011 19:32:26" title="_LBLLASTUPDATE_ 29/4/2011 19:32:26" border="0"><br><span style="font-size:10px;font-weight:bolder;color:#0000FF;margin-top:2px;">0</span></center>
+<script>
+  function chiamapopup(id,indice) {
+    var figlio;
+    var width  = 450;
+    var height = 330;
+    var left   = (screen.width/100)*(10+indice)
+    var top    = (screen.height/100)*(10+indice);
+    var params = 'width='+width+', height='+height;
+    params += ', top='+top+', left='+left;
+    params += ', directories=no';
+    params += ', location=no';
+    params += ', menubar=no';
+    params += ', resizable=yes';
+    params += ', scrollbars=yes';
+    params += ', status=no';
+    params += ', toolbar=no';
+    
+    try
+    {	figlio = window.open("","promemoria"+id,params);
+      //figlio.checkPage();
+      figlio.document.reminder.testpopup.value='B';
+    }
+    
+    catch(error)
+    {	figlio = window.open("reminderpopup.php?selobj="+id,"promemoria"+id,params);
+      if (figlio.opener==null) {
+        figlio.opener=self;
+        figlio.frames["saveopener"].opener=self;
+      }
+    }
+    
+    
+  }
+  
+function ricaricami() {
+  location.reload(true);
+}
+
+function apriins() {
+  var figlionew;
+    var width  = 450;
+    var height = 450;
+    var left   = (screen.width-width)/2
+    var top    = (screen.height-height)/2;
+    var params = 'width='+width+', height='+height;
+    params += ', top='+top+', left='+left;
+    params += ', directories=no';
+    params += ', location=no';
+    params += ', menubar=no';
+    params += ', resizable=yes';
+    params += ', scrollbars=yes';
+    params += ', status=no';
+    params += ', toolbar=no';
+    
+    figlionew = window.open("reminderpopup.php?op=2","promemorianew",params);
+    if (figlionew.opener==null) {
+      figlionew.opener=self;
+    }
+}
+
+//IMPOSTA RELOAD PAGINA CON TIMEOUT
+//setTimeout('ricaricami()', 30000);
+
+var data=new Date();
+
+str="";
+str = data.getDate()+"/"+(data.getMonth()+1)+"/"+data.getFullYear()+" "+data.getHours()+":"+data.getMinutes()+":"+data.getSeconds();
+
+document.images[0].alt = '_LBLLASTUPDATE_ '+str;
+document.images[0].title = '_LBLLASTUPDATE_ '+str;
+
+/*
+chiamapopup(100,1);
+chiamapopup(100,2);
+
+chiamapopup(100,3);
+chiamapopup(100,4);
+chiamapopup(100,5);
+chiamapopup(100,6);
+*/
+
+</script></body></html>

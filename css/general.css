@@ -1,0 +1,10 @@
+input {
+  background-color: #FFF;
+  border: 1px solid #444;
+  padding: 3px;
+  font-size: 12px;
+}
+input:hover,
+input:focus {
+  background-color: #AEB5CA;
+}
